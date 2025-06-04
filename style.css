@@ -9,6 +9,313 @@ body {
 .hero {
   padding: 50px 20px;
 }
+body {
+  margin: 0;
+  font-family: "Cormorant Infant", serif;
+  background: #f9f8f6;
+  color: #000;
+  text-align: center;
+}
+
+.hero {
+  padding: 50px 20px;
+}
+
+.hero h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 80px;
+  margin: 0;
+}
+
+.hero h1 span {
+  display: block;
+}
+
+.date-section {
+  padding: 20px;
+}
+
+.date-section h2 {
+  font-size: 36px;
+}
+
+.text {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.names {
+  font-size: 28px;
+  font-style: italic;
+  margin-top: 30px;
+  text-decoration: underline;
+}
+
+.time {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.calendar table {
+  border-collapse: separate;
+  border-spacing: 10px 10px; /* горизонталь, вертикаль */
+  margin: 0 auto;
+  font-size: 25px;
+  text-align: center;
+}
+
+.calendar th,
+.calendar td {
+  width: 40px;
+  height: 40px;
+}
+
+.highlight {
+  position: relative;
+  font-weight: bold;
+}
+
+.highlight::before {
+  content: "";
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 40px;
+  height: 35px;
+  transform: translate(-50%, -50%);
+  border: 1.5px solid red;
+  border-radius: 50%;
+}
+
+.location {
+  padding: 30px 20px;
+}
+
+.location h3 {
+  font-size: 26px;
+}
+
+.location p {
+  font-size: 18px;
+}
+
+.footer {
+  padding: 20px;
+  font-style: italic;
+}
+.music-control {
+  margin-bottom: 20px;
+}
+
+#playButton {
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.location-icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.location-icon-box i {
+  font-size: 48px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.location-label {
+  border: 2px solid #000;
+  padding: 6px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #000;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+}
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.countdown {
+  display: flex;
+  gap: 20px;
+  padding: 15px 30px;
+  border: 2px solid #000;
+  border-radius: 40px;
+  background: #fff;
+  font-family: "Playfair Display", serif;
+}
+
+.countdown div {
+  text-align: center;
+}
+
+.countdown span {
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.countdown p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ====== PHONE (до 600px) ====== */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .date-section h2 {
+    font-size: 24px;
+  }
+
+  .text {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  .names {
+    font-size: 22px;
+  }
+
+  .time {
+    font-size: 24px;
+  }
+
+  .calendar table {
+    font-size: 18px;
+  }
+
+  .calendar th,
+  .calendar td {
+    width: 30px;
+    height: 30px;
+  }
+
+  .location h3 {
+    font-size: 20px;
+  }
+
+  .location p {
+    font-size: 16px;
+  }
+
+  .location-icon-box i {
+    font-size: 36px;
+  }
+
+  .location-label {
+    font-size: 16px;
+    padding: 5px 15px;
+  }
+
+  .countdown {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
+  }
+
+  .countdown span {
+    font-size: 22px;
+  }
+
+  .countdown p {
+    font-size: 16px;
+  }
+
+  #playButton {
+    font-size: 24px;
+  }
+}
+
+/* ====== TABLET (601px – 1024px) ====== */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .hero h1 {
+    font-size: 60px;
+  }
+
+  .date-section h2 {
+    font-size: 30px;
+  }
+
+  .text {
+    font-size: 17px;
+    padding: 8px;
+  }
+
+  .names {
+    font-size: 25px;
+  }
+
+  .time {
+    font-size: 28px;
+  }
+
+  .calendar table {
+    font-size: 22px;
+  }
+
+  .calendar th,
+  .calendar td {
+    width: 35px;
+    height: 35px;
+  }
+
+  .location h3 {
+    font-size: 24px;
+  }
+
+  .location p {
+    font-size: 17px;
+  }
+
+  .location-icon-box i {
+    font-size: 42px;
+  }
+
+  .location-label {
+    font-size: 18px;
+    padding: 6px 18px;
+  }
+
+  .countdown {
+    gap: 15px;
+    padding: 12px 25px;
+  }
+
+  .countdown span {
+    font-size: 26px;
+  }
+
+  .countdown p {
+    font-size: 17px;
+  }
+
+  #playButton {
+    font-size: 26px;
+  }
+}
 
 .hero h1 {
   font-family: "Great Vibes", cursive;
