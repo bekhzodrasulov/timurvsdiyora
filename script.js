@@ -1,13 +1,16 @@
 const playButton = document.getElementById("playButton");
+const playIcon = document.getElementById("playIcon");
 const bgMusic = document.getElementById("bgMusic");
 
 playButton.addEventListener("click", () => {
   if (bgMusic.paused) {
     bgMusic.play();
-    playButton.textContent = "⏸"; // Pause icon
+    playIcon.src = "images/pouse.png";
+    playIcon.alt = "Pause";
   } else {
     bgMusic.pause();
-    playButton.textContent = "▶"; // Play icon
+    playIcon.src = "images/play.png";
+    playIcon.alt = "Play";
   }
 });
 

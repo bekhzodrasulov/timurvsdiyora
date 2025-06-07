@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Great+Vibes&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700"
       rel="stylesheet"
     />
     <link
@@ -35,7 +35,12 @@
         />
         <path d="M26 54c-6-2-8-8-6-14 2-6 6-6 10-8s8-6 6-10-6-4-10-4" />
       </svg>
-      <h1 calssName="fristWords"><span>T</span>&<span>D</span></h1>
+      <h1 calssName="fristWords">
+        <span>T</span
+        ><img style="height: 30px" src="images/vs.png" alt="and" /><span
+          >D</span
+        >
+      </h1>
       <svg
         class="rose rose-bottom fade-in"
         xmlns="http://www.w3.org/2000/svg"
@@ -53,8 +58,15 @@
 
     <div class="date-section fade-in">
       <div class="music-control">
-        <button id="playButton">▶</button>
-        <audio id="bgMusic" src="music.mp3"></audio>
+        <button id="playButton">
+          <img
+            style="height: 50px"
+            id="playIcon"
+            src="images/play.png"
+            alt="Play"
+          />
+        </button>
+        <audio id="bgMusic" src="music.m4a"></audio>
       </div>
     </div>
 
@@ -163,10 +175,12 @@
         <path d="M40 4c2 6-2 10-6 12s-6 2-8 6-2 10 4 12 10 0 12 4 0 10-6 14" />
         <path d="M48 52c-4-4-8-6-12-6s-10 2-12-2 2-10 6-12" />
       </svg>
-      <h1>Restoran</h1>
-      <h3>Farovon</h3>
+      <h4>Restoran</h4>
+      <h1>Farovon</h1>
       <div class="location-icon-box">
-        <i class="fas fa-map-marker-alt"></i>
+        <a href="https://yandex.ru/maps/-/CHGIF8Oa"
+          ><img style="height: 130px" src="images/location.png" alt="location"
+        /></a>
         <a
           href="https://yandex.ru/maps/-/CHGIF8Oa"
           target="_blank"
@@ -178,7 +192,7 @@
       <p><strong> Biz sizni 24 iyul soat 19:00da kutamiz </strong></p>
     </div>
 
-    <div class="footer fade-in">Hurmat bilan, Qurbonovlar oilasi</div>
+    <div className="footer fade-in">Hurmat bilan, Qurbonovlar oilasi</div>
 
     <script src="script.js"></script>
   </body>
