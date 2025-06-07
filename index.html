@@ -17,6 +17,24 @@
     />
 
     <link rel="stylesheet" href="style.css" />
+    <script>
+      // Блокировать правый клик
+      document.addEventListener("contextmenu", (e) => e.preventDefault());
+
+      // Блокировать F12 и другие клавиши
+      document.addEventListener("keydown", function (e) {
+        if (
+          e.key === "F12" ||
+          (e.ctrlKey &&
+            e.shiftKey &&
+            (e.key === "I" || e.key === "J" || e.key === "C")) ||
+          (e.ctrlKey && e.key === "U") ||
+          (e.shiftKey && e.ctrlKey && e.key === "J")
+        ) {
+          e.preventDefault();
+        }
+      });
+    </script>
   </head>
   <body>
     <div class="hero fade-in-on-scroll delay-1">
@@ -149,8 +167,8 @@
       <h1 class="restaurant-name">Farovon</h1>
       <p class="location-address">Navoiy shahar, Karvon ko'chasi, 336</p>
       <div class="location-icon-box">
-        <a href="https://yandex.ru/maps/-/CHGIF8Oa"
-          ><img style="height: 130px" src="images/location.png" alt="location"
+        <a target="_blank" href="https://yandex.ru/maps/-/CHGIF8Oa"
+          ><img class="location-icon" src="images/location.png" alt="location"
         /></a>
         <a
           href="https://yandex.ru/maps/-/CHGIF8Oa"

@@ -1,5 +1,7 @@
-body {
+body,
+html {
   margin: 0;
+  overflow-x: hidden;
   background-image: url("images/wallpaper.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -48,7 +50,7 @@ body {
 
 .rose-right-footer {
   position: absolute;
-  bottom: -10px;
+  bottom: 0px;
   right: -210px;
 }
 /* ====== PHONE (до 600px) ====== */
@@ -159,13 +161,21 @@ body {
     font-size: 36px;
   }
 
+  .location-icon {
+    height: 130px;
+    position: relative;
+    z-index: 3;
+  }
+
   .location-label {
     font-size: 16px;
     padding: 5px 15px;
+    position: relative;
+    z-index: 2;
   }
 
   .location-welcome {
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 50px;
     margin-bottom: 50px;
   }
@@ -323,6 +333,7 @@ body {
   .rose-left-header,
   .rose-left-footer {
     animation-name: slideInLeft;
+    z-index: -1;
   }
 
   /* Анимации для появления справа */
