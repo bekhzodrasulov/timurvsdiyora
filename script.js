@@ -41,20 +41,20 @@ function updateCountdown() {
 setInterval(updateCountdown, 1000);
 updateCountdown();
 
-const fadeElements = document.querySelectorAll(".fade-in");
-
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
+        observer.unobserve(entry.target); // один раз показать
       }
     });
   },
   {
-    threshold: 0.2,
+    threshold: 0.5,
   }
 );
 
-fadeElements.forEach((el) => observer.observe(el));
+document.querySelectorAll(".fade-in-on-scroll").forEach((elem) => {
+  observer.observe(elem);
+});

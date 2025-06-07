@@ -19,44 +19,18 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="hero">
-      <svg
-        class="rose rose-top fade-in"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 64 64"
-        width="100"
-        height="100"
-        fill="none"
-        stroke="black"
-        stroke-width="1.5"
-      >
-        <path
-          d="M32 2c4 8 0 12-2 14s-8 4-10 8c-2 4 0 10 6 12 6 2 10 0 14 4s2 12-6 16"
-        />
-        <path d="M26 54c-6-2-8-8-6-14 2-6 6-6 10-8s8-6 6-10-6-4-10-4" />
-      </svg>
+    <div class="hero fade-in-on-scroll delay-1">
+      <img class="rose-left-header" src="images/rose12.png" alt="" />
       <h1 calssName="fristWords">
         <span>T</span
         ><img style="height: 30px" src="images/vs.png" alt="and" /><span
           >D</span
         >
       </h1>
-      <svg
-        class="rose rose-bottom fade-in"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 64 64"
-        width="100"
-        height="100"
-        fill="none"
-        stroke="black"
-        stroke-width="1.5"
-      >
-        <path d="M20 60c0-8 4-12 8-14s10-2 14-6c4-4 6-12 0-16s-10-2-14 2" />
-        <path d="M32 48c-2-6-6-6-10-8s-6-8-2-12c4-4 8-2 12 0" />
-      </svg>
+      <img class="rose-right-header" src="images/rose5.png" alt="" />
     </div>
 
-    <div class="date-section fade-in">
+    <div class="date-section fade-in-on-scroll delay-2">
       <div class="music-control">
         <button id="playButton">
           <img
@@ -70,17 +44,22 @@
       </div>
     </div>
 
-    <div class="date-section fade-in">
+    <div class="date-section fade-in-on-scroll delay-3">
       <h2>24/07/2025</h2>
       <p class="text">
         Sizni xayotimizning eng go'zal va baxtli onlarida baxtimizga sherik
         bo'lishingizni istab shodiyonamizga taklif etamiz!
       </p>
+      <div>
+        <img class="rose-middle-data" src="images/rose14.png" alt="rose" />
+      </div>
+      <div class="hurmat-bilan">Hurmat bilan</div>
       <div class="names">Timur va Diyora</div>
+      <div class="underline"><hr /></div>
       <div class="time">19:00</div>
     </div>
 
-    <div class="countdown-container fade-in">
+    <div class="countdown-container fade-in-on-scroll delay-4">
       <div class="countdown">
         <div>
           <span id="days">0</span>
@@ -101,7 +80,7 @@
       </div>
     </div>
 
-    <div class="calendar fade-in">
+    <div class="calendar fade-in-on-scroll delay-5">
       <h2>Iyul</h2>
       <table>
         <tr>
@@ -161,22 +140,14 @@
       </table>
     </div>
 
-    <div class="location fade-in">
-      <svg
-        class="rose fade-in"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 64 64"
-        width="100"
-        height="100"
-        fill="none"
-        stroke="black"
-        stroke-width="1.5"
-      >
-        <path d="M40 4c2 6-2 10-6 12s-6 2-8 6-2 10 4 12 10 0 12 4 0 10-6 14" />
-        <path d="M48 52c-4-4-8-6-12-6s-10 2-12-2 2-10 6-12" />
-      </svg>
-      <h4>Restoran</h4>
-      <h1>Farovon</h1>
+    <div class="fade-in-on-scroll delay-6">
+      <img class="rose-middle" src="images/rose10.png" alt="" />
+    </div>
+
+    <div class="location fade-in-on-scroll delay-7">
+      <p class="location-restaurant">Restoran</p>
+      <h1 class="restaurant-name">Farovon</h1>
+      <p class="location-address">Navoiy shahar, Karvon ko'chasi, 336</p>
       <div class="location-icon-box">
         <a href="https://yandex.ru/maps/-/CHGIF8Oa"
           ><img style="height: 130px" src="images/location.png" alt="location"
@@ -187,12 +158,18 @@
           class="location-label"
           >Lokatsiya</a
         >
+        <img class="rose-left-footer" src="images/rose12.png" alt="" />
       </div>
-      <p>Navoiy shahar, Karvon ko'chasi, 336</p>
-      <p><strong> Biz sizni 24 iyul soat 19:00da kutamiz </strong></p>
+      <div>
+        <p class="location-welcome">
+          Biz sizni <br />
+          24 iyul soat 19:00da <br />
+          kutamiz
+        </p>
+        <img class="rose-right-footer" src="images/rose3.png" alt="roses" />
+      </div>
+      <div className="footer fade-in">Hurmat bilan, Qurbonovlar oilasi</div>
     </div>
-
-    <div className="footer fade-in">Hurmat bilan, Qurbonovlar oilasi</div>
 
     <script src="script.js"></script>
   </body>
