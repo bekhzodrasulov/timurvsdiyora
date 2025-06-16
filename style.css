@@ -389,7 +389,7 @@ html {
   .fade-in-on-scroll {
     opacity: 0;
     transform: translateY(30px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
+    transition: opacity 2s ease-out, transform 2s ease-out;
   }
 
   .fade-in-on-scroll.visible {
@@ -665,7 +665,7 @@ html {
   .fade-in {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 1s ease, transform 1s ease;
+    transition: opacity 2s ease, transform 2s ease;
   }
 
   .fade-in.visible {
@@ -766,7 +766,7 @@ html {
   .fade-in-on-scroll {
     opacity: 0;
     transform: translateY(30px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
+    transition: opacity 2s ease-out, transform 2s ease-out;
   }
 
   .fade-in-on-scroll.visible {
@@ -1040,7 +1040,7 @@ html {
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 1s ease, transform 1s ease;
+  transition: opacity 2s ease, transform 2s ease;
 }
 
 .fade-in.visible {
@@ -1141,7 +1141,7 @@ html {
 .fade-in-on-scroll {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
+  transition: opacity 2s ease-out, transform 2s ease-out;
 }
 
 .fade-in-on-scroll.visible {
