@@ -15,7 +15,7 @@ playButton.addEventListener("click", () => {
 });
 
 function updateCountdown() {
-  const weddingDate = new Date("2025-07-24T19:00:00");
+  const weddingDate = new Date("2025-07-24T19:30:00");
   const now = new Date();
   const diff = weddingDate - now;
 
