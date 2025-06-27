@@ -207,7 +207,6 @@ html {
     font-size: 20px;
     font-weight: 400;
     font-style: italic;
-    margin-left: 50px;
   }
 
   .location-icon-box i {
@@ -224,6 +223,7 @@ html {
     font-size: 16px;
     padding: 5px 15px;
     position: relative;
+    right: 10px;
     z-index: 2;
   }
 
@@ -268,7 +268,7 @@ html {
     border-radius: 30px;
     text-decoration: none;
     color: #000;
-    font-family: "Cormorant Infant", serif;
+    font-family: "Great Vibes", cursive;
     font-size: 20px;
   }
   .countdown-container {
@@ -571,6 +571,7 @@ html {
     font-size: 16px;
     padding: 5px 15px;
     position: relative;
+    right: 10px;
     z-index: 2;
   }
 
@@ -614,7 +615,7 @@ html {
     border-radius: 30px;
     text-decoration: none;
     color: #000;
-    font-family: "Cormorant Infant", serif;
+    font-family: "Dancing Script", cursive;
     font-size: 20px;
   }
   .countdown-container {
