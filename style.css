@@ -204,7 +204,7 @@ html {
 
   .location-address {
     font-family: "Dancing Script", cursive;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
     font-style: italic;
   }
@@ -229,14 +229,14 @@ html {
 
   .location-welcome {
     font-family: "Dancing Script", cursive;
-    font-size: 20px;
+    font-size: 22px;
     margin-top: 50px;
     margin-bottom: 50px;
   }
 
   .family-name {
     font-family: "Dancing Script", cursive;
-    font-size: 20px;
+    font-size: 22px;
   }
   .music-control {
     margin-bottom: 20px;
@@ -575,16 +575,6 @@ html {
     z-index: 2;
   }
 
-  .location-welcome {
-    font-size: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-
-  .footer {
-    padding: 20px;
-    font-style: italic;
-  }
   .music-control {
     margin-bottom: 20px;
   }
@@ -930,16 +920,6 @@ html {
   z-index: 2;
 }
 
-.location-welcome {
-  font-size: 20px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.footer {
-  padding: 20px;
-  font-style: italic;
-}
 .music-control {
   margin-bottom: 20px;
 }
