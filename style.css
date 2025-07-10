@@ -90,6 +90,10 @@ html {
   bottom: 0px;
   right: -210px;
 }
+
+.footer-link {
+  color: #000;
+}
 /* ====== PHONE (до 600px) ====== */
 
 @media (max-width: 600px) {
